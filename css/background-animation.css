@@ -1,0 +1,76 @@
+
+.background {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+
+       
+
+    border-bottom: 3px solid #f5f5f5;
+}
+
+.banner {
+    z-index: 10;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    z-index:1;
+}
+
+.banner .blocks{
+    z-index: 10;
+    position:relative;
+    display: block;
+    height:12vh;
+    width: 10%;
+   
+    animation: animate 0.5s ease-in-out forwards;
+}
+
+.banner .blocks:nth-child(even){
+    animation: animate 0.75s ease-in-out forwards;
+}
+.banner .blocks:nth-child(7n+3) {
+    animation: animate 0.25ss ease-in-out forwards;
+}
+.banner .blocks:nth-child(7n+7) {
+    animation: animate 0.5s ease-in-out forwards;
+}
+@keyframes animate{
+    0%
+    {
+        opacity:0;
+        top:1000px;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+    }
+    50% 
+    {   
+        opacity: 1;
+        background: url("../img/img2.jpg");
+        background-position:center;
+        background-attachment:fixed;
+        
+
+    }
+    100% 
+    {
+        opacity: 1;
+        top: 0px;
+        background: url("../img/img2.jpg");
+        background-position: center;
+        background-size:cover;
+        background-attachment: fixed;
+      
+      
+    }
+
+}

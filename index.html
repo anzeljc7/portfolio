@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tilen Anzeljc</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/background-animation.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,63 +19,193 @@
     />
   </head>
   <body>
-    <div class="section a">
+    <div class="background">
       <div class="section-a-text">
         <h1>Živjo, sem <span>Tilen</span>.</h1>
         <h2>Študiram na FRI.</h2>
-        <button id="poglej-delo">
+        <button id="poglej-vec">
           Poglej si več o meni <i class="fa-solid fa-arrow-right"></i>
         </button>
+      </div>
+      <div class="banner">
+        <div class="blocks"></div>
       </div>
     </div>
     <header></header>
     <div class="section b">
       <div class="section-b up">
-        <img src="/img/test.png " alt="" />
+        <div id="square1"></div>
+
+        <div id="square2"></div>
+        <img src="/img/tilen1.jpeg" alt="" />
         <div class="section-b-text">
           <h1>Kdo sem</h1>
           <p>
-            Fuelled by a passion for designing compelling products, I have a
-            deep desire to excel and continuously improve in my work. Learn more
-            about my journey below.
+            Sem Tilen Anzeljc, 19-letni študent na Fakulteti za računalništvo in
+            informatiko v Ljubljani, vedno pripravljen na nove izzive in
+            preizkušnje. Več o meni si poglejte na povezavi spodaj.
           </p>
+          <a id="zivljenjepis" href="dat/zivljenjepis 2022.pdf" download>
+            CV <i class="fa-solid fa-download"></i>
+          </a>
         </div>
       </div>
       <div class="section-b down">
         <div class="section-b-text smaller">
-          <h1>Moje izkušnje</h1>
+          <h1>Moja pot</h1>
           <p>
-            Always up for a challenge, I have worked for lean start-ups and was
-            a member of the first New Zealand start-up to attend Y Combinator,
-            the largest start-up accelerator in the world. From there, I worked
-            my way up to Art Director and Team Lead at Appster where I oversaw
-            the design of 30+ mobile and desktop apps. Currently, I lead UI/UX
-            design at SaaS start-up VideoMyJob.
+            Z računalništvom sem se podrobneje spoznal na Vegovi v Ljubljani,
+            kjer sem se naučil osnov programiranja v C/C++ in PHP ter
+            relacijskih podatkovnih baz SQL. V zaključnem letniku sem se
+            poglobil v spletno programiranje in kot temo za zaključni izdelek
+            izbral socialno omrežje. Spoznal sem se s frontend in backend
+            razvojem in se naučil uporabo React.js, Node.js ter nerelacijskih
+            podatkovnih baz. Šolanje sem nadaljeval na FRI-ju , kjer nameravam
+            še razširiti svoje znanje. Tu sem se spoznal še s C in Javo, ter
+            bolj podrobno predelal že dotaknjeno snov
           </p>
         </div>
         <div class="section-b-props">
           <div class="prop">C++</div>
           <div class="prop">React.js</div>
+          <div class="prop">Node.js</div>
           <div class="prop">HTML</div>
           <div class="prop">CSS</div>
           <div class="prop">SQL</div>
           <div class="prop">Java</div>
-          <div class="prop">Node.js</div>
         </div>
       </div>
     </div>
     <div class="section c">
       <h1>Projekti</h1>
       <div class="grid">
-        <div class="grid-card ga"></div>
-        <div class="grid-card gb"></div>
-        <div class="grid-card gc"></div>
-        <div class="grid-card gd"></div>
-        <div class="grid-card ge"></div>
-        <div class="grid-card gf"></div>
-        <div class="grid-card gg"></div>
+        <div class="grid-card ga">
+          <div class="card-more">
+            <div class="card-info">
+              <h2>FlappyBird</h2>
+              <p>
+                Stari dobri Flappy bird, realiziran z JavaScript-om in HTML
+                canvasom.
+              </p>
+              <a
+                class="more"
+                href="https://anzeljc7.github.io/flapipy-bird/"
+                target="_blank"
+                >Poglej si</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="grid-card gb">
+          <div class="card-more">
+            <div class="card-info">
+              <h2>Urejevalnik slik</h2>
+              <p>
+                Program, ki omogoča obdelavo slike s pomočjo JavaScript-a in
+                matrik, ki spremenjajo vrednosti posameznih pikslov.
+              </p>
+              <a
+                class="more"
+                href="https://anzeljc7.github.io/image-editor/"
+                target="_blank"
+                >Poglej si</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="grid-card gc">
+          <div class="card-more">
+            <div class="card-info">
+              <h2>SaveAmazon</h2>
+              <p>
+                Moj prvi projekt, ki sem ga razvil s pomočjo objektnega
+                programiranja C++ in grafične knjižnice openGL.
+              </p>
+              <a class="more" href="dat/save-amazon.zip" download>Poglej si</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-card gd">
+          <div class="card-more">
+            <div class="card-info">
+              <h2>TicTacToe</h2>
+              <p>
+                Igra, ki sva jo s sošolcem razvila v C++ in grafični knjižnici
+                SFML.
+              </p>
+              <a class="more" href="dat/tic-tac-too.zip" download>Poglej si</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-card ge">
+          <div class="card-more">
+            <div class="card-info">
+              <h2>Pregled kriptovalut</h2>
+              <p>
+                Moj najnovejši izdelek, ki omogoča pregled nad kriptovalutami.
+                Zaradi nenadne posodobitve API-ja iz katerega se pridobivajo
+                podatki je graf nekoliko okrnjen. Omogoča tudi prijavo z
+                Ethereum denarnico in donacijo.
+              </p>
+              <a
+                class="more"
+                target="_blank"
+                href="https://anzeljc7.github.io/crypto-view/"
+                >Poglej si</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="grid-card gf">
+          <div class="card-more">
+            <div class="card-info">
+              <h2>Socialno omrežje</h2>
+              <p>
+                Zaključna naloga na maturi, za katero sem dobil odlično oceno.
+                Projekt je bil razvit s pomočjo MERN stack-a (MongoDB,
+                Expres.js, React.js, Node.js) in ni še v celoti dokončan, vendar
+                pa že vsebuje vse delujoče funkcionalnosti socialnega omrežja.
+              </p>
+              <a
+                class="more"
+                href="dat/Anzeljc Tilen - strokovno poročilo.pdf"
+                download
+                >Poglej si</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="grid-card gg">
+          <div class="card-more">
+            <div class="card-info">
+              <h2>Arduino projekt</h2>
+              <p>
+                Mikrokmilnik Arduino Nano z ostalimi komponentami. Glavni cilj
+                je bil razviti delujočo večfunkcijsko napravo, ki omogoča
+                grafičen pregled nad temperaturo, vlago in tlakom, preprosto
+                računsko igro ter realizacijo DAC pretvornika.
+              </p>
+              <a class="more" href="dat/arduino.zip" download>Poglej si</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <footer></footer>
+    <footer>
+      <div id="media">
+        <a
+          href="https://www.linkedin.com/in/tilen-anzeljc-856775240/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href=""><i class="fa-solid fa-envelope" target="_blank"></i></a>
+        <a href="https://github.com/anzeljc7" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      2022 Tilen Anzeljc
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
