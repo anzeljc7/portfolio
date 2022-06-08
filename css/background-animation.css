@@ -55,7 +55,7 @@
     50% 
     {   
         opacity: 1;
-        background: url("..portfolio/img2.JPG");
+        background: url("https: //anzeljc7.github.io/portfolio/img/img2.jpg");
         background-position:center;
         background-attachment:fixed;
         
@@ -65,7 +65,7 @@
     {
         opacity: 1;
         top: 0px;
-        background: url("..portfolio/img2.JPG");
+        background: url("https: //anzeljc7.github.io/portfolio/img/img2.jpg");
         background-position: center;
         background-size:cover;
         background-attachment: fixed;
