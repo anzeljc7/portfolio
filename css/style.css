@@ -213,36 +213,36 @@ header{
 
 
 .ga {
-    background: url("..portfolio/../img/flappy1.png");
+    background: url("../portfolio/img/flappy1.png");
 
 }
 
 .gb {
-    background: url("..portfolio/../img/galery.png");
+    background: url("../portfolio/img/galery.png");
     border: 2px solid #e8e8e8;
 }
 
 .gc {
-    background: url("..portfolio/../img/amazon.png");
+    background: url("../portfolio/img/amazon.png");
 
 }
 
 .gd {
-    background: url("..portfolio/../img/tictac.png");
+    background: url("../portfolio/img/tictac.png");
 
 }
 .ge {
-    background: url("..portfolio/../img/crypto.png");
+    background: url("../portfolio/img/crypto.png");
 
 }
 
 .gf {
-    background: url("..portfolio/../img/social.png");
+    background: url("../portfolio/img/social.png");
     border: 2px solid #e8e8e8;
 }
 
 .gg {
-    background: url("..portfolio/../img/arduino.png");
+    background: url("../portfolio/img/arduino.png");
 
 }
 
