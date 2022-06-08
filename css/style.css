@@ -27,12 +27,15 @@ h1,h2,h3,h4{
     color:#f5f5f5;
     flex-direction:column;
     top: 90%;
+    width:100%;
     right: 50%;
     transform: translate(50%, -50%);
     font-size:20px;
     text-align:center;
-    letter-spacing: 200px;
-    transition: opacity 2s ease-in, top 1s ease-in, letter-spacing 2s ease-in-out;
+    letter-spacing: 150px;
+    transition: opacity 1.5s ease-in, top 1.5s ease-in, letter-spacing 1.5s ease-in-out;
+    overflow:hidden;
+    white-space: nowrap;
    
 }
 
@@ -171,7 +174,7 @@ header{
 }
 
 .section-b-props{
-    width:25%;
+    width:30%;
     display: flex;
     flex-wrap: wrap;
     padding:50px;

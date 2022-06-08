@@ -30,17 +30,17 @@
     height:12vh;
     width: 10%;
    
-    animation: animate 0.5s ease-in-out forwards;
+    animation: animate 0.2s ease-in-out forwards;
 }
 
 .banner .blocks:nth-child(even){
-    animation: animate 0.75s ease-in-out forwards;
+    animation: animate 0.45s ease-in-out forwards;
 }
 .banner .blocks:nth-child(7n+3) {
-    animation: animate 0.25ss ease-in-out forwards;
+    animation: animate 0.15ss ease-in-out forwards;
 }
 .banner .blocks:nth-child(7n+7) {
-    animation: animate 0.5s ease-in-out forwards;
+    animation: animate 0.2s ease-in-out forwards;
 }
 @keyframes animate{
     0%
